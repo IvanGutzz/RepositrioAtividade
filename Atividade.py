@@ -89,7 +89,7 @@ def menu(): #Menu principal do progama
             if quantidade > 20:
                 quantidade = 20
 
-            noticias = buscar_noticia(tema, quantidade)
+            noticias = buscar_noticia(tema, quantidade) #Salva na variável a função
             if noticias:
                 print(f"\n {len(noticias)} notícias encontradas para '{tema}'.")
                 exibir_noticias(noticias)
@@ -109,7 +109,7 @@ def menu(): #Menu principal do progama
             print("Opção inválida. Digite 1 ou 2.")
 
 
-# chamada direta, sem guard
+#Chamar função para executar o código
 menu()
 
 
